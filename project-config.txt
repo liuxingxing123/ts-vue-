@@ -1,0 +1,8 @@
+
+vue create my-app
+cd my-app
+vue add element
+
+cnpm i pug pug-plain-loader -D
+
+cnpm i vue-class -S
