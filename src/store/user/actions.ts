@@ -1,11 +1,11 @@
 // store/user/actions.ts
 
-import { UserState } from './types'
+import { UserAllState, UserState } from './types'
 import { ActionTree } from 'vuex'
 import { RootState } from '../types'
 import TYPES from "./mutations-types"
 
-export const actions: ActionTree<UserState, RootState> = {
+export const actions: ActionTree<UserAllState, RootState> = {
   fetchData({ commit }): void {
     const userInfo: UserState = {
       firstName: 'Hello',

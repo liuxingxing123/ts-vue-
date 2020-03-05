@@ -1,0 +1,4 @@
+export default {
+  ACTION_GETMSG: "ACTION_GETMSG",
+  ADD_COUNT: "ADD_COUNT"
+};

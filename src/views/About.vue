@@ -8,24 +8,24 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
-import { Action, Mutation, Getter, State } from 'vuex-class'
+import { Component, Prop, Vue } from "vue-property-decorator"
+import { Action, Mutation, Getter, State } from "vuex-class"
 import TYPES from "@/store/user/mutations-types"
 
-const namespace = 'user'
+const namespace = "user"
 @Component({
-  name: "about"
+    name: "about"
 })
 export default class About extends Vue {
-  @Action("fetchData", { namespace }) public fetchData!: Function;
-  @Mutation(TYPES.CHANGE_MOBILE, { namespace }) public changeMobile!: Function;
-  @Getter("fullName", { namespace }) public fullName!: string;
-  @State("firstName", { namespace }) public firstName!: string;
-  @State("mobile", { namespace }) public mobile!: string;
+    @Action("fetchData", { namespace }) public fetchData!: Function
+    @Mutation(TYPES.CHANGE_MOBILE, { namespace }) public changeMobile!: Function
+    @Getter("fullName", { namespace }) public fullName!: string
+    @State("firstName", { namespace }) public firstName!: string
+    @State("mobile", { namespace }) public mobile!: string
 
-  public created() {
-    this.fetchData();
-    this.changeMobile("123456");
-  }
+    public created() {
+        this.fetchData()
+        this.changeMobile("123456")
+    }
 }
 </script>

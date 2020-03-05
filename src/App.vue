@@ -9,31 +9,30 @@
     #nav 
       router-link(to="/") Home 
       router-link(to="/about") About 
+      router-link(to="/faxian") 发现 
     router-view
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue'
+import { Component, Prop, Vue } from "vue-property-decorator"
+import HelloWorld from "./components/HelloWorld.vue"
 
 @Component({
-  name:'app',
-  components:{
-    HelloWorld
-  }
+    name: "app",
+    components: {
+        HelloWorld
+    }
 })
-export default class App extends Vue {
-  
-}
+export default class App extends Vue {}
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
 }
 </style>

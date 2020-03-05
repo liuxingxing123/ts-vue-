@@ -1,20 +1,19 @@
 // store/user/index.ts
 
 import { Module } from 'vuex'
-import { UserAllState } from './types'
+import { FaxianState } from './types'
 import { RootState } from '../types'
 import { getters } from './getters'
 import { actions } from './actions'
 import { mutations } from './mutations'
 
-const state: UserAllState = {
-  firstName: '',
-  lastName: '',
-  mobile: '',
-  testMsg: '测试通过直接在state里面给定数据 @state能否拿到'
+const state: FaxianState = {
+  count: 23,
+  faxianTitle: "初始化的时候存放在state中的数据",
+  faxianMsg: "初始值"
 }
 const namespaced = true
-export const user: Module<UserAllState, RootState> = {
+export const faxian: Module<FaxianState, RootState> = {
   namespaced,
   state,
   getters,

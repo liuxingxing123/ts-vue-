@@ -1,10 +1,10 @@
 // store/user/mutations.ts
 
 import { MutationTree } from 'vuex'
-import { UserState } from './types'
+import { UserAllState } from './types'
 import TYPES from "./mutations-types"
 
-export const mutations: MutationTree<UserState> = {
+export const mutations: MutationTree<UserAllState> = {
   [TYPES.CHANGE_MOBILE](state, mobile: string) {
     state.mobile = mobile
   },

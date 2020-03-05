@@ -1,10 +1,10 @@
 // store/user/getters.ts
 
 import { GetterTree } from 'vuex'
-import { UserState } from './types'
+import { UserAllState } from './types'
 import { RootState } from '../types'
 
-export const getters: GetterTree<UserState, RootState> = {
+export const getters: GetterTree<UserAllState, RootState> = {
   fullName(state): string {
     return `${state.firstName} ${state.lastName}`
   }
