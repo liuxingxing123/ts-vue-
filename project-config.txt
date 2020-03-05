@@ -6,3 +6,25 @@ vue add element
 cnpm i pug pug-plain-loader -D
 
 cnpm i vue-class -S
+
+工作区忽略文件配置  放置在.vscode下的settings.json里面
+{
+    "files.autoSave": "onFocusChange",
+    "vetur.format.options.tabSize": 4,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/README.md": true,
+        "**/node_modules":true,
+        "**/shims-tsx.d.ts":true,
+        "**/shims-vue.d.ts":true,
+        "**/.browserslistrc":true,
+        "**/.gitignore":true,
+        "**/babel.config.js":true,
+        "**/package-lock.json":true,
+        "**/tsconfig.json":true
+    }
+}
